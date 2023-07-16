@@ -9,7 +9,7 @@ import { Slideshow } from '../components/animation/scrool';
     <HumBurger />
     <h4 style={{backgroundColor:"red"}}>Home Page</h4>
     <Slideshow></Slideshow>
-    <MyComponent />
+    {/* <MyComponent /> */}
 </div>
   )
 }
