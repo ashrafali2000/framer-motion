@@ -8,7 +8,7 @@ import styles from "./slider.module.css";
 const variants = {
   enter: (direction: number) => {
     return {
-      x: direction > 0 ? 1000 : -1000,
+      x: direction > 0 ? 100 : -100,
       opacity: 0
     };
   },
@@ -20,13 +20,13 @@ const variants = {
   exit: (direction: number) => {
     return {
       zIndex: 0,
-      x: direction < 0 ? 1000 : -1000,
+      x: direction < 0 ? 100 : -100,
       opacity: 0
     };
   }
 };
 
-const swipeConfidenceThreshold = 10000;
+const swipeConfidenceThreshold = 100;
 const swipePower = (offset: number, velocity: number) => {
   return Math.abs(offset) * velocity;
 };
