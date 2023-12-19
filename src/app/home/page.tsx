@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image'
 import { MyComponent } from '../components/animation/myComponent';
 import HumBurger from '../components/animation/amBurger';
@@ -5,6 +6,7 @@ import Slideshow from '../components/animation/slider';
 import HeroSection from '../components/heroSection';
 import Example1 from '../components/animation/example';
 import DefaulHomeHeroSecton from '../components/defaultHome';
+import SliderVideo from '../components/sliderVideos';
 
 
  function Home() {
@@ -20,6 +22,7 @@ import DefaulHomeHeroSecton from '../components/defaultHome';
 
     {/* Default Hoem Section */}
     <DefaulHomeHeroSecton/>
+    <SliderVideo />
 </div>
   )
 }
